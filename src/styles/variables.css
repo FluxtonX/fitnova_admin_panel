@@ -1,0 +1,96 @@
+:root {
+  /* ========================================================
+     Vercel/Linear Inspired Enterprise Theme 
+     ======================================================== */
+
+  /* Neutral Slate/Zinc Palette */
+  --zinc-50: #fafafa;
+  --zinc-100: #f4f4f5;
+  --zinc-200: #e4e4e7;
+  --zinc-300: #d4d4d8;
+  --zinc-400: #a1a1aa;
+  --zinc-500: #71717a;
+  --zinc-600: #52525b;
+  --zinc-700: #3f3f46;
+  --zinc-800: #27272a;
+  --zinc-900: #18181b;
+  --zinc-950: #09090b;
+
+  /* Primary Accent: Crisp Indigo/Blue */
+  --indigo-50: #eff6ff;
+  --indigo-100: #dbeafe;
+  --indigo-500: #3b82f6;
+  --indigo-600: #2563eb;
+  --indigo-700: #1d4ed8;
+
+  /* Semantic Colors */
+  --color-success: #10b981;
+  --color-success-bg: rgba(16, 185, 129, 0.1);
+  --color-error: #ef4444;
+  --color-error-bg: rgba(239, 68, 68, 0.1);
+  --color-warning: #f59e0b;
+  --color-warning-bg: rgba(245, 158, 11, 0.1);
+  --color-info: #0ea5e9;
+  --color-info-bg: rgba(14, 165, 233, 0.1);
+
+  /* Light Theme Mapping (Default) */
+  --color-bg: var(--zinc-50);
+  --color-surface: #ffffff;
+  --color-field: var(--zinc-100);
+  --color-border: var(--zinc-200);
+  
+  --color-text-primary: var(--zinc-900);
+  --color-text-secondary: var(--zinc-500);
+  --color-text-muted: var(--zinc-400);
+
+  --color-primary: var(--indigo-600);
+  --color-primary-hover: var(--indigo-700);
+  --color-primary-light: var(--indigo-50);
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--indigo-500), var(--indigo-700));
+
+  /* Shadows (Elegant & Soft) */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-primary: 0 4px 14px 0 rgba(37, 99, 235, 0.39);
+  
+  /* Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ========================================================
+   Dark Theme Mapping
+   ======================================================== */
+[data-theme='dark'] {
+  --color-bg: var(--zinc-950);
+  --color-surface: var(--zinc-900);
+  --color-field: var(--zinc-800);
+  --color-border: var(--zinc-800);
+  
+  --color-text-primary: var(--zinc-50);
+  --color-text-secondary: var(--zinc-400);
+  --color-text-muted: var(--zinc-500);
+
+  --color-primary: var(--indigo-500);
+  --color-primary-hover: var(--indigo-600);
+  --color-primary-light: rgba(59, 130, 246, 0.1);
+
+  /* Gradients (Slightly softer in dark mode) */
+  --gradient-primary: linear-gradient(135deg, var(--indigo-500), var(--indigo-600));
+
+  /* Dark mode shadows should be darker */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -2px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.5);
+  --shadow-primary: 0 4px 14px 0 rgba(59, 130, 246, 0.39);
+}

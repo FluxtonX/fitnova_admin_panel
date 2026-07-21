@@ -3,13 +3,14 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
-const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID
+export const firebaseConfig = {
+  apiKey: "AIzaSyBuhx148XDOHGS_TQipCkoxs2tl0cD5dx8",
+  authDomain: "fitnovva.firebaseapp.com",
+  projectId: "fitnovva",
+  storageBucket: "fitnovva.firebasestorage.app",
+  messagingSenderId: "917529088327",
+  appId: "1:917529088327:web:74224d8c4b5d73db0cbc62",
+  measurementId: "G-7NC687R29E"
 };
 
 const app = initializeApp(firebaseConfig);

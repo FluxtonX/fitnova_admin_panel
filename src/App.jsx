@@ -16,6 +16,7 @@ import SleepList from './pages/Sleep/SleepList';
 import ChallengesList from './pages/Challenges/ChallengesList';
 import NotificationsList from './pages/Notifications/NotificationsList';
 import Settings from './pages/Settings/Settings';
+import Profile from './pages/Profile/Profile';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -54,6 +55,7 @@ function App() {
                 <Route path="challenges" element={<ChallengesList />} />
                 <Route path="notifications" element={<NotificationsList />} />
                 <Route path="settings" element={<Settings />} />
+                <Route path="profile" element={<Profile />} />
               </Route>
 
               {/* Catch all */}

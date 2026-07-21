@@ -1,5 +1,7 @@
-import { collection, doc, getDocs, getDoc, updateDoc, deleteDoc, query, orderBy, limit, startAfter, where } from 'firebase/firestore';
-import { db } from './config';
+import { collection, doc, getDocs, getDoc, updateDoc, deleteDoc, query, orderBy, limit, startAfter, where, setDoc } from 'firebase/firestore';
+import { initializeApp, deleteApp } from 'firebase/app';
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
+import { db, firebaseConfig } from './config';
 
 const USERS_COLLECTION = 'users';
 
@@ -64,3 +66,36 @@ export const deleteUser = async (userId) => {
     throw error;
   }
 };
+
+export const createNewUser = async (email, password, profileData) => {
+  let secondaryApp;
+  try {
+    // Generate a unique name for the secondary app instance
+    const appName = `SecondaryApp-${Date.now()}`;
+    secondaryApp = initializeApp(firebaseConfig, appName);
+    const secondaryAuth = getAuth(secondaryApp);
+
+    // Create user in Firebase Authentication
+    const credential = await createUserWithEmailAndPassword(secondaryAuth, email, password);
+    const uid = credential.user.uid;
+
+    // Create user document in Firestore users/{uid}
+    const userDocRef = doc(db, USERS_COLLECTION, uid);
+    await setDoc(userDocRef, {
+      ...profileData,
+      email: email.trim().toLowerCase(),
+      createdAt: new Date().toISOString(),
+      status: 'active',
+      role: profileData.role || 'user',
+    });
+
+    return uid;
+  } catch (error) {
+    throw error;
+  } finally {
+    if (secondaryApp) {
+      await deleteApp(secondaryApp);
+    }
+  }
+};
+

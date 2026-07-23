@@ -5,7 +5,10 @@ import {
   WarningCircle,
   Lightning,
 } from '@phosphor-icons/react';
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from '../../services/firebase/config';
 import { CATEGORY_IMAGES } from '../../services/firebase/challengeService';
+import { getMeditationSessions } from '../../services/firebase/meditationService';
 import styles from './Form.module.css';
 
 const CHALLENGE_TYPES = [
@@ -95,12 +98,50 @@ const ChallengeForm = ({
     badgeName: '',
     description: '',
     imageUrl: CATEGORY_IMAGES.complete_workouts,
+    audioUrl: '',
     goal: '',
     rules: '',
     status: 'active',
     challengeMode: 'community',
     isFeatured: false,
   });
+
+  const [audioLibrary, setAudioLibrary] = useState([]);
+
+  useEffect(() => {
+    const fetchAudioLibrary = async () => {
+      try {
+        const list = [];
+        const seenKeys = new Set();
+
+        // Fetch all uploaded meditation sessions from Firestore
+        const sessions = await getMeditationSessions().catch(() => []);
+        sessions.forEach((s) => {
+          const url = (s.audioUrl || s.url || s.audio || s.soundUrl || s.fileUrl || '').trim();
+          const title = (s.title || s.name || 'Meditation Session').trim();
+          const categoryLabel = (s.category || s.focus || s.tag || 'Mindfulness').toString();
+          const instructorLabel = s.guide || s.instructor ? ` (${s.guide || s.instructor})` : '';
+          const key = url || s.id || title;
+
+          if (key && !seenKeys.has(key)) {
+            seenKeys.add(key);
+            list.push({
+              id: s.id,
+              title: title,
+              category: categoryLabel,
+              audioUrl: url,
+              displayName: `[${categoryLabel.toUpperCase()}] ${title}${instructorLabel}`,
+            });
+          }
+        });
+
+        setAudioLibrary(list);
+      } catch (e) {
+        console.warn('Error fetching audio library in ChallengeForm:', e);
+      }
+    };
+    fetchAudioLibrary();
+  }, []);
 
   useEffect(() => {
     if (initialData) {
@@ -115,6 +156,7 @@ const ChallengeForm = ({
         badgeName: initialData.badgeName || '',
         description: initialData.description || '',
         imageUrl: initialData.imageUrl || CATEGORY_IMAGES[typeKey] || CATEGORY_IMAGES.complete_workouts,
+        audioUrl: initialData.audioUrl || initialData.audio || '',
         goal: initialData.goal || '',
         rules: Array.isArray(initialData.rules) ? initialData.rules.join('\n') : (initialData.rules || ''),
         status: initialData.status || 'active',
@@ -320,6 +362,42 @@ const ChallengeForm = ({
           className={styles.input}
           placeholder="https://images.unsplash.com/..."
           value={formData.imageUrl}
+          onChange={handleChange}
+        />
+      </div>
+
+      <div className={styles.formGroup}>
+        <label className={styles.label}>
+          🎵 Assign Audio Track from Meditation Library (Select or enter custom URL below)
+        </label>
+        <select
+          className={styles.select}
+          value={formData.audioUrl}
+          onChange={(e) => setFormData({ ...formData, audioUrl: e.target.value })}
+        >
+          <option value="">
+            {audioLibrary.length === 0
+              ? '-- No Uploaded Audio Tracks Found in Meditation Library --'
+              : '-- No Audio Track Assigned --'}
+          </option>
+          {audioLibrary.map((track) => (
+            <option key={track.id} value={track.audioUrl}>
+              {track.displayName}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      <div className={styles.formGroup}>
+        <label className={styles.label}>
+          Custom Audio Track URL
+        </label>
+        <input
+          type="url"
+          name="audioUrl"
+          className={styles.input}
+          placeholder="https://example.com/audio/meditation_track.mp3"
+          value={formData.audioUrl}
           onChange={handleChange}
         />
       </div>

@@ -157,6 +157,7 @@ export const createChallenge = async (data) => {
       description: data.description || '',
       imageUrl: data.imageUrl || CATEGORY_IMAGES[category] || CATEGORY_IMAGES.complete_workouts,
       videoUrl: data.videoUrl || data.video || null,
+      audioUrl: data.audioUrl || data.audio || null,
       goal: data.goal || `Complete ${data.targetValue || 10} ${data.unit || 'units'}`,
       rules: rulesList.length > 0 ? rulesList : ['Complete daily tasks to track progress.'],
       durationDays: Number(data.durationDays) || 7,
@@ -209,6 +210,7 @@ export const updateChallenge = async (id, data) => {
       description: data.description || '',
       imageUrl: data.imageUrl || CATEGORY_IMAGES[category] || CATEGORY_IMAGES.complete_workouts,
       videoUrl: data.videoUrl || data.video || null,
+      audioUrl: data.audioUrl || data.audio || null,
       goal: data.goal || `Complete ${data.targetValue || 10} ${data.unit || 'units'}`,
       rules: rulesList,
       durationDays: Number(data.durationDays) || 7,
@@ -240,13 +242,74 @@ export const updateChallenge = async (id, data) => {
 /**
  * Delete a challenge from both Firestore collections
  */
-export const deleteChallenge = async (id) => {
+export const deleteChallenge = async (target) => {
+  if (!target) return;
+
+  const targetId = typeof target === 'string' ? target.trim() : String(target?.id || target?.challengeId || '').trim();
+  const targetTitle = typeof target === 'object' && target?.title ? String(target.title).trim() : '';
+
+  console.log('🗑️ Deleting challenge from Firestore:', { targetId, targetTitle });
+
+  const matchesTarget = (docId, data) => {
+    if (!docId && !data) return false;
+    const cid = String(data?.challengeId || data?.id || '').trim();
+    const title = String(data?.title || data?.name || '').trim();
+
+    if (targetId && (docId === targetId || cid === targetId)) return true;
+    if (targetTitle && title.toLowerCase() === targetTitle.toLowerCase()) return true;
+    return false;
+  };
+
+  // 1. Delete from DEFAULT_CHALLENGES_COLLECTION ('default_challenges')
   try {
-    await deleteDoc(doc(db, DEFAULT_CHALLENGES_COLLECTION, id)).catch(() => {});
-    await deleteDoc(doc(db, CHALLENGES_COLLECTION, id)).catch(() => {});
-  } catch (error) {
-    console.error('Error deleting challenge:', error);
-    throw error;
+    if (targetId) {
+      await deleteDoc(doc(db, DEFAULT_CHALLENGES_COLLECTION, targetId)).catch((err) =>
+        console.warn('Notice on direct delete default_challenges:', err.message)
+      );
+    }
+    const snap1 = await getDocs(collection(db, DEFAULT_CHALLENGES_COLLECTION));
+    for (const d of snap1.docs) {
+      if (matchesTarget(d.id, d.data())) {
+        await deleteDoc(d.ref).catch((err) =>
+          console.error('Failed to delete doc from default_challenges:', d.id, err)
+        );
+      }
+    }
+  } catch (e) {
+    console.warn('Error querying default_challenges:', e);
+  }
+
+  // 2. Delete from CHALLENGES_COLLECTION ('challenges')
+  try {
+    if (targetId) {
+      await deleteDoc(doc(db, CHALLENGES_COLLECTION, targetId)).catch((err) =>
+        console.warn('Notice on direct delete challenges:', err.message)
+      );
+    }
+    const snap2 = await getDocs(collection(db, CHALLENGES_COLLECTION));
+    for (const d of snap2.docs) {
+      if (matchesTarget(d.id, d.data())) {
+        await deleteDoc(d.ref).catch((err) =>
+          console.error('Failed to delete doc from challenges:', d.id, err)
+        );
+      }
+    }
+  } catch (e) {
+    console.warn('Error querying challenges:', e);
+  }
+
+  // 3. Delete from user_challenge_progress
+  try {
+    const snap3 = await getDocs(collection(db, 'user_challenge_progress'));
+    for (const d of snap3.docs) {
+      if (matchesTarget(d.id, d.data())) {
+        await deleteDoc(d.ref).catch((err) =>
+          console.error('Failed to delete doc from user_challenge_progress:', d.id, err)
+        );
+      }
+    }
+  } catch (e) {
+    console.warn('Error querying user_challenge_progress:', e);
   }
 };
 

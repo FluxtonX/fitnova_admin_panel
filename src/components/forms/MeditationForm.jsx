@@ -21,48 +21,7 @@ import {
 import { uploadToCloudinary } from '../../services/cloudinary/cloudinaryService';
 import styles from './Form.module.css';
 
-const PRESET_MEDITATIONS = [
-  {
-    label: '🧘‍♂️ Morning Mindfulness (15m)',
-    title: 'Morning Mindfulness & Presence',
-    focus: 'mindfulness',
-    duration: 15,
-    instructor: 'Sarah Jenkins',
-    description: 'Start your morning with grounded awareness, deep breath control, and mental clarity.',
-    tags: 'morning, mindfulness, awareness, presence',
-    audioUrl: 'https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=rain-and-thunder-nature-sounds-7803.mp3',
-  },
-  {
-    label: '🎯 Deep Focus & Clarity (20m)',
-    title: 'Deep Work & Concentration Boost',
-    focus: 'focus',
-    duration: 20,
-    instructor: 'Dr. Marcus Vance',
-    description: 'Enhance focus, tune out distractions, and enter a flow state for peak productivity.',
-    tags: 'focus, clarity, productivity, work',
-    audioUrl: 'https://cdn.pixabay.com/download/audio/2022/03/10/audio_c8c8ad0b25.mp3?filename=white-noise-relaxing-10255.mp3',
-  },
-  {
-    label: '🌊 Stress & Anxiety Release (10m)',
-    title: 'Instant Stress & Anxiety Relief',
-    focus: 'stress_relief',
-    duration: 10,
-    instructor: 'Elena Rostova',
-    description: 'Quick guided session to melt muscle tension, calm the nervous system, and release anxiety.',
-    tags: 'stress, anxiety, calm, relief',
-    audioUrl: 'https://cdn.pixabay.com/download/audio/2021/08/09/audio_884478149e.mp3?filename=ocean-waves-ambient-1108.mp3',
-  },
-  {
-    label: '🌙 Bedtime Sleep Prep (30m)',
-    title: 'Bedtime Deep Sleep Preparation',
-    focus: 'sleep',
-    duration: 30,
-    instructor: 'Fitnova Master',
-    description: 'Soothing body scan and ambient soundscapes designed to lead you effortlessly into deep sleep.',
-    tags: 'sleep, bedtime, relaxation, night',
-    audioUrl: 'https://cdn.pixabay.com/download/audio/2022/10/18/audio_31b0b57112.mp3?filename=binaural-beats-432hz-12401.mp3',
-  },
-];
+
 
 const MeditationForm = ({ initialData, onSubmit, onCancel, isSubmitting, serverError }) => {
   const [formData, setFormData] = useState({
@@ -79,7 +38,7 @@ const MeditationForm = ({ initialData, onSubmit, onCancel, isSubmitting, serverE
     status: 'active',
   });
 
-  const [audioSourceMode, setAudioSourceMode] = useState('library'); // 'library' | 'upload'
+  const [audioSourceMode, setAudioSourceMode] = useState('upload'); // 'upload' | 'url' | 'library'
   const [uploading, setUploading] = useState(false);
   const [uploadProgress, setUploadProgress] = useState(0);
   const [uploadError, setUploadError] = useState(null);
@@ -223,23 +182,7 @@ const MeditationForm = ({ initialData, onSubmit, onCancel, isSubmitting, serverE
         </div>
       )}
 
-      {/* Quick Templates Presets */}
-      <div className={styles.presetsSection}>
-        <span className={styles.presetsLabel}>⚡ Quick Templates (Click to Auto-Fill):</span>
-        <div className={styles.presetsRow}>
-          {PRESET_MEDITATIONS.map((preset, idx) => (
-            <button
-              key={idx}
-              type="button"
-              className={styles.presetBtn}
-              onClick={() => handleApplyPreset(preset)}
-            >
-              <Sparkle size={14} weight="fill" />
-              <span>{preset.label}</span>
-            </button>
-          ))}
-        </div>
-      </div>
+
 
       {/* Audio Source Mode Switcher Tabs */}
       <div className={styles.formGroup}>
@@ -265,6 +208,14 @@ const MeditationForm = ({ initialData, onSubmit, onCancel, isSubmitting, serverE
             <CloudArrowUp size={18} weight="bold" />
             <span>Upload New Audio File</span>
           </button>
+          <button
+            type="button"
+            className={`${styles.tabBtn} ${audioSourceMode === 'url' ? styles.tabActive : ''}`}
+            onClick={() => setAudioSourceMode('url')}
+          >
+            <MusicNotes size={18} weight="bold" />
+            <span>Custom Audio URL</span>
+          </button>
         </div>
 
         {audioSourceMode === 'library' ? (
@@ -282,7 +233,7 @@ const MeditationForm = ({ initialData, onSubmit, onCancel, isSubmitting, serverE
               ))}
             </select>
           </div>
-        ) : (
+        ) : audioSourceMode === 'upload' ? (
           <div style={{ marginTop: '6px' }}>
             <label
               style={{
@@ -326,6 +277,17 @@ const MeditationForm = ({ initialData, onSubmit, onCancel, isSubmitting, serverE
                 </div>
               </div>
             )}
+          </div>
+        ) : (
+          <div style={{ marginTop: '6px' }}>
+            <input
+              type="url"
+              name="audioUrl"
+              value={formData.audioUrl}
+              onChange={handleChange}
+              placeholder="https://example.com/audio/meditation_track.mp3"
+              className={styles.input}
+            />
           </div>
         )}
       </div>

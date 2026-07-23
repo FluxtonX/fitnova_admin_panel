@@ -194,21 +194,27 @@ const ChallengesList = () => {
     setDeleteLoading(true);
     try {
       if (deletingTarget === 'bulk') {
-        try {
-          await bulkDeleteChallenges(selectedIds);
-        } catch (_) {}
+        await bulkDeleteChallenges(selectedIds);
         setChallenges((prev) => prev.filter((c) => !selectedIds.includes(c.id)));
         showToast(`${selectedIds.length} challenges deleted.`);
         setSelectedIds([]);
       } else {
-        try {
-          await deleteChallenge(deletingTarget.id);
-        } catch (_) {}
-        setChallenges((prev) => prev.filter((c) => c.id !== deletingTarget.id));
-        showToast(`Challenge "${deletingTarget.title}" deleted.`);
+        await deleteChallenge(deletingTarget);
+        const targetId = deletingTarget.id || deletingTarget.challengeId;
+        const targetTitle = deletingTarget.title;
+        setChallenges((prev) =>
+          prev.filter(
+            (c) =>
+              c.id !== targetId &&
+              c.challengeId !== targetId &&
+              c.title?.trim() !== targetTitle?.trim()
+          )
+        );
+        showToast(`Challenge "${deletingTarget.title || 'selected'}" deleted.`);
       }
       setDeletingTarget(null);
     } catch (err) {
+      console.error('Delete challenge error:', err);
       showToast(err.message || 'Failed to delete challenge.', 'error');
     } finally {
       setDeleteLoading(false);

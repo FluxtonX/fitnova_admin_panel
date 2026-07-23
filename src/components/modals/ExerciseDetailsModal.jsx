@@ -12,8 +12,15 @@ const ExerciseDetailsModal = ({
 }) => {
   if (!isOpen || !exercise) return null;
 
-  const videoUrl = exercise.video?.url || exercise.video?.secure_url;
-  const thumbnailUrl = exercise.thumbnail?.url || exercise.thumbnail?.secure_url;
+  const extractUrl = (val) => {
+    if (!val) return '';
+    if (typeof val === 'string') return val.trim();
+    if (typeof val === 'object') return val.secure_url || val.url || val.videoUrl || val.videoAsset || '';
+    return '';
+  };
+
+  const videoUrl = extractUrl(exercise.video || exercise.videoUrl || exercise.videoAsset || exercise.video_url || exercise.mediaUrl);
+  const thumbnailUrl = extractUrl(exercise.thumbnail || exercise.thumbnailUrl || exercise.thumbnailAsset || exercise.thumbnail_url);
 
   return (
     <div className={styles.overlay} onClick={onClose}>
@@ -42,7 +49,7 @@ const ExerciseDetailsModal = ({
           {/* Media Player Section */}
           <div className={styles.mediaContainer}>
             {videoUrl ? (
-              <video src={videoUrl} controls autoPlay loop className={styles.mediaContent} />
+              <video src={videoUrl} controls autoPlay loop muted playsInline className={styles.mediaContent} />
             ) : thumbnailUrl ? (
               <img src={thumbnailUrl} alt={exercise.name} className={styles.mediaContent} />
             ) : (

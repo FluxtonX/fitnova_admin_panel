@@ -297,17 +297,21 @@ const WorkoutDetailModal = ({ workout, onClose, onEdit, onWorkoutUpdated }) => {
                           <span className={styles.exName}>{ex.name}</span>
 
                           <div className={styles.exActionButtons}>
-                            {(ex.videoAsset || ex.videoUrl) && (
+                            {Boolean(ex.videoAsset || ex.videoUrl || ex.video) && (
                               <button
                                 type="button"
                                 className={styles.videoLink}
-                                onClick={() =>
+                                onClick={() => {
+                                  const rawV = ex.videoAsset || ex.videoUrl || ex.video;
+                                  const videoSrc = typeof rawV === 'string' ? rawV : rawV?.url || rawV?.secure_url || '';
+                                  const rawP = ex.thumbnailAsset || ex.thumbnailUrl || ex.thumbnail;
+                                  const posterSrc = typeof rawP === 'string' ? rawP : rawP?.url || rawP?.secure_url || '';
                                   setActiveVideo({
                                     title: ex.name,
-                                    url: ex.videoAsset || ex.videoUrl,
-                                    poster: ex.thumbnailAsset || ex.thumbnailUrl,
-                                  })
-                                }
+                                    url: videoSrc,
+                                    poster: posterSrc,
+                                  });
+                                }}
                                 title="Play Exercise Video inside Admin Panel"
                               >
                                 <Play size={14} weight="fill" /> Play Video

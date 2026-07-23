@@ -156,7 +156,16 @@ export const enrichWorkoutsWithFirestoreExercises = async (workouts) => {
     const firestoreExercises = await getExercises();
     if (!firestoreExercises || firestoreExercises.length === 0) return workouts;
 
-    // Create lookup dictionary for exercise name -> exercise doc
+    // Helper to safely get URL from string or object
+    const extractUrl = (doc) => {
+      if (!doc) return '';
+      const v = doc.videoUrl || doc.video || doc.videoAsset || doc.video_url || doc.mediaUrl || doc.secure_url;
+      if (typeof v === 'string') return v.trim();
+      if (v && typeof v === 'object') return v.secure_url || v.url || '';
+      return '';
+    };
+
+    // Create lookup dictionary for exercise name & id -> exercise doc
     const exMap = new Map();
     firestoreExercises.forEach((ex) => {
       if (ex.name) exMap.set(ex.name.toLowerCase().trim(), ex);
@@ -169,16 +178,25 @@ export const enrichWorkoutsWithFirestoreExercises = async (workouts) => {
       const updatedDetails = w.exerciseDetails.map((detail) => {
         const cleanName = (detail.name || '').toLowerCase().trim();
         const matched = exMap.get(cleanName);
-        if (matched && (matched.videoUrl || matched.secure_url)) {
-          const liveUrl = matched.videoUrl || matched.secure_url;
-          const livePoster = matched.thumbnailUrl || (typeof liveUrl === 'string' ? liveUrl.replace(/\.mp4$/i, '.jpg') : '');
+        const liveUrl = extractUrl(matched) || extractUrl(detail);
+
+        if (liveUrl) {
+          const rawPoster = matched?.thumbnail || matched?.thumbnailUrl || detail.thumbnail || detail.thumbnailUrl;
+          let livePoster = '';
+          if (typeof rawPoster === 'string') livePoster = rawPoster.trim();
+          else if (rawPoster && typeof rawPoster === 'object') livePoster = rawPoster.secure_url || rawPoster.url || '';
+          if (!livePoster && typeof liveUrl === 'string') {
+            livePoster = liveUrl.replace(/\.mp4$/i, '.jpg');
+          }
 
           return {
             ...detail,
             videoAsset: liveUrl,
             videoUrl: liveUrl,
+            video: liveUrl,
             thumbnailAsset: livePoster,
             thumbnailUrl: livePoster,
+            thumbnail: livePoster,
           };
         }
         return detail;

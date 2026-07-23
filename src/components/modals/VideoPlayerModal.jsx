@@ -2,15 +2,28 @@ import React, { useRef, useEffect, useState } from 'react';
 import { X, Video, ArrowSquareOut, Play, SpeakerHigh, SpeakerSlash } from '@phosphor-icons/react';
 import styles from './VideoPlayerModal.module.css';
 
+const extractUrl = (val) => {
+  if (!val) return '';
+  if (typeof val === 'string') return val.trim();
+  if (typeof val === 'object') return val.secure_url || val.url || val.videoUrl || val.videoAsset || '';
+  return '';
+};
+
 const VideoPlayerModal = ({ title, videoUrl, posterUrl, onClose }) => {
   const videoRef = useRef(null);
   const [isMuted, setIsMuted] = useState(true);
   const [isPlaying, setIsPlaying] = useState(false);
   const [hasError, setHasError] = useState(false);
 
+  const cleanVideoUrl = extractUrl(videoUrl);
+  const cleanPosterUrl = extractUrl(posterUrl);
+
   useEffect(() => {
-    if (videoRef.current) {
+    setHasError(false);
+    if (videoRef.current && cleanVideoUrl) {
       videoRef.current.muted = true;
+      videoRef.current.src = cleanVideoUrl;
+      videoRef.current.load();
       const playPromise = videoRef.current.play();
       if (playPromise !== undefined) {
         playPromise
@@ -18,14 +31,14 @@ const VideoPlayerModal = ({ title, videoUrl, posterUrl, onClose }) => {
             setIsPlaying(true);
           })
           .catch((err) => {
-            console.warn('Autoplay prevented by browser:', err);
+            console.warn('Autoplay notice:', err);
             setIsPlaying(false);
           });
       }
     }
-  }, [videoUrl]);
+  }, [cleanVideoUrl]);
 
-  if (!videoUrl) return null;
+  if (!cleanVideoUrl) return null;
 
   const toggleMute = () => {
     if (videoRef.current) {
@@ -36,8 +49,7 @@ const VideoPlayerModal = ({ title, videoUrl, posterUrl, onClose }) => {
 
   const handleManualPlay = () => {
     if (videoRef.current) {
-      videoRef.current.play();
-      setIsPlaying(true);
+      videoRef.current.play().then(() => setIsPlaying(true)).catch(() => {});
     }
   };
 
@@ -59,27 +71,27 @@ const VideoPlayerModal = ({ title, videoUrl, posterUrl, onClose }) => {
         <div className={styles.playerWrapper}>
           <video
             ref={videoRef}
-            key={videoUrl}
+            key={cleanVideoUrl}
+            src={cleanVideoUrl}
             controls
             playsInline
             muted
+            autoPlay
             preload="auto"
-            poster={posterUrl || (typeof videoUrl === 'string' ? videoUrl.replace(/\.mp4$/i, '.jpg') : '')}
+            poster={cleanPosterUrl || (cleanVideoUrl ? cleanVideoUrl.replace(/\.mp4$/i, '.jpg') : '')}
             className={styles.videoElement}
-            onPlay={() => setIsPlaying(true)}
+            onPlay={() => {
+              setIsPlaying(true);
+              setHasError(false);
+            }}
             onPause={() => setIsPlaying(false)}
             onError={(e) => {
-              console.warn('Video onError triggered for:', videoUrl, e);
-              // Only set error if video source is completely broken
-              if (!videoRef.current || videoRef.current.networkState === 3) {
+              console.warn('Video element onError for:', cleanVideoUrl, e);
+              if (videoRef.current && videoRef.current.error) {
                 setHasError(true);
               }
             }}
-          >
-            <source src={videoUrl} type="video/mp4" />
-            <source src={videoUrl} type="video/webm" />
-            Your browser does not support HTML5 video playback.
-          </video>
+          />
 
           {/* Manual Play Overlay if Browser blocked Autoplay */}
           {!isPlaying && !hasError && (
@@ -93,7 +105,7 @@ const VideoPlayerModal = ({ title, videoUrl, posterUrl, onClose }) => {
             <div className={styles.errorOverlay}>
               <p>Direct video playback issue.</p>
               <a
-                href={videoUrl}
+                href={cleanVideoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn primary"
@@ -116,7 +128,7 @@ const VideoPlayerModal = ({ title, videoUrl, posterUrl, onClose }) => {
           </div>
 
           <a
-            href={videoUrl}
+            href={cleanVideoUrl}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.videoLink}

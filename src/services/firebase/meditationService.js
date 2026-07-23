@@ -49,23 +49,17 @@ export const getMeditationSessions = async () => {
     await ensureAuth();
     const mapById = new Map();
 
-    // 1. Include local cache
-    const local = getLocalCache();
-    local.forEach((item) => {
-      if (item && item.id) mapById.set(item.id, item);
-    });
-
-    // 2. Fetch from 'meditations'
+    // 1. Fetch from Firestore 'meditations'
     try {
       const snap1 = await getDocs(collection(db, MEDITATIONS_COLLECTION));
       snap1.docs.forEach((d) => {
         mapById.set(d.id, { id: d.id, collectionName: MEDITATIONS_COLLECTION, ...d.data() });
       });
     } catch (e) {
-      console.warn('Error fetching meditations:', e);
+      console.warn('Error fetching meditations from Firestore:', e);
     }
 
-    // 3. Fetch from 'sleep_sounds'
+    // 2. Fetch from Firestore 'sleep_sounds'
     try {
       const snap2 = await getDocs(collection(db, SLEEP_SOUNDS_COLLECTION));
       snap2.docs.forEach((d) => {
@@ -74,7 +68,19 @@ export const getMeditationSessions = async () => {
         }
       });
     } catch (e) {
-      console.warn('Error fetching sleep_sounds:', e);
+      console.warn('Error fetching sleep_sounds from Firestore:', e);
+    }
+
+    // 3. Include and auto-sync local items to Firestore if missing from cloud
+    const local = getLocalCache();
+    for (const item of local) {
+      if (item && item.id && !mapById.has(item.id)) {
+        mapById.set(item.id, item);
+        // Sync item to Firestore Cloud
+        try {
+          await setDoc(doc(db, MEDITATIONS_COLLECTION, item.id), item, { merge: true });
+        } catch (_) {}
+      }
     }
 
     return Array.from(mapById.values());

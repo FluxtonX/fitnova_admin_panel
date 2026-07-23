@@ -1,0 +1,731 @@
+[
+  {
+    "file": "burpee.mp4",
+    "name": "burpee.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725784/fitnova/exercises/videos/burpee_wjcbtd.mp4",
+    "public_id": "fitnova/exercises/videos/burpee_wjcbtd",
+    "duration": 6.421,
+    "format": "mp4",
+    "bytes": 2423701
+  },
+  {
+    "file": "exercises/Clock-Push-Up_Chest.mp4",
+    "name": "Clock-Push-Up_Chest.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725791/fitnova/exercises/videos/Clock-Push-Up_Chest_p1sltb.mp4",
+    "public_id": "fitnova/exercises/videos/Clock-Push-Up_Chest_p1sltb",
+    "duration": 29.7,
+    "format": "mp4",
+    "bytes": 38818233
+  },
+  {
+    "file": "exercises/Dumbbell-Bench-Press-(female)_Chest.mp4",
+    "name": "Dumbbell-Bench-Press-(female)_Chest.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725795/fitnova/exercises/videos/Dumbbell-Bench-Press-_female__Chest_ldc2yl.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Bench-Press-_female__Chest_ldc2yl",
+    "duration": 6.6,
+    "format": "mp4",
+    "bytes": 7801619
+  },
+  {
+    "file": "exercises/Dumbbell-Cross-Body-Hammer-Curl-(Version-2)_Upper-Arms-FIX.mp4",
+    "name": "Dumbbell-Cross-Body-Hammer-Curl-(Version-2)_Upper-Arms-FIX.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725798/fitnova/exercises/videos/Dumbbell-Cross-Body-Hammer-Curl-_Version-2__Upper-Arms-FIX_fnqsb3.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Cross-Body-Hammer-Curl-_Version-2__Upper-Arms-FIX_fnqsb3",
+    "duration": 13.2,
+    "format": "mp4",
+    "bytes": 7038738
+  },
+  {
+    "file": "exercises/Dumbbell-Fly_Chest-FIX2_.mp4",
+    "name": "Dumbbell-Fly_Chest-FIX2_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725801/fitnova/exercises/videos/Dumbbell-Fly_Chest-FIX2__nazsrq.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Fly_Chest-FIX2__nazsrq",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 7049384
+  },
+  {
+    "file": "exercises/Dumbbell-Hammer-Curl-(version-2)_Upper-Arms-FIX_.mp4",
+    "name": "Dumbbell-Hammer-Curl-(version-2)_Upper-Arms-FIX_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725804/fitnova/exercises/videos/Dumbbell-Hammer-Curl-_version-2__Upper-Arms-FIX__u7v9lg.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Hammer-Curl-_version-2__Upper-Arms-FIX__u7v9lg",
+    "duration": 5.966667,
+    "format": "mp4",
+    "bytes": 4583253
+  },
+  {
+    "file": "exercises/Dumbbell-Incline-Bench-Press-(female)_Chest.mp4",
+    "name": "Dumbbell-Incline-Bench-Press-(female)_Chest.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725809/fitnova/exercises/videos/Dumbbell-Incline-Bench-Press-_female__Chest_xxpt6f.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Incline-Bench-Press-_female__Chest_xxpt6f",
+    "duration": 6.6,
+    "format": "mp4",
+    "bytes": 4880114
+  },
+  {
+    "file": "exercises/Dumbbell-Incline-Bench-Press_Chest-FIX2_.mp4",
+    "name": "Dumbbell-Incline-Bench-Press_Chest-FIX2_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725812/fitnova/exercises/videos/Dumbbell-Incline-Bench-Press_Chest-FIX2__ax6yeq.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Incline-Bench-Press_Chest-FIX2__ax6yeq",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 4178552
+  },
+  {
+    "file": "exercises/Dumbbell-Incline-Fly_Chest-FIX2_.mp4",
+    "name": "Dumbbell-Incline-Fly_Chest-FIX2_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725815/fitnova/exercises/videos/Dumbbell-Incline-Fly_Chest-FIX2__zkzbco.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Incline-Fly_Chest-FIX2__zkzbco",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 4766877
+  },
+  {
+    "file": "exercises/Dumbbell-Incline-Triceps-Extension_Upper-Arms-FIX_.mp4",
+    "name": "Dumbbell-Incline-Triceps-Extension_Upper-Arms-FIX_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725818/fitnova/exercises/videos/Dumbbell-Incline-Triceps-Extension_Upper-Arms-FIX__ag3hbv.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Incline-Triceps-Extension_Upper-Arms-FIX__ag3hbv",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 3701372
+  },
+  {
+    "file": "exercises/Dumbbell-Kickback_Upper-Arms.mp4",
+    "name": "Dumbbell-Kickback_Upper-Arms.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725821/fitnova/exercises/videos/Dumbbell-Kickback_Upper-Arms_ux8zel.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Kickback_Upper-Arms_ux8zel",
+    "duration": 6.639973,
+    "format": "mp4",
+    "bytes": 5433108
+  },
+  {
+    "file": "exercises/Dumbbell-Lateral-Raise_shoulder-FIX_.mp4",
+    "name": "Dumbbell-Lateral-Raise_shoulder-FIX_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725824/fitnova/exercises/videos/Dumbbell-Lateral-Raise_shoulder-FIX__q2xbbv.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Lateral-Raise_shoulder-FIX__q2xbbv",
+    "duration": 5.833333,
+    "format": "mp4",
+    "bytes": 4980707
+  },
+  {
+    "file": "exercises/Dumbbell-Lying-Rear-Lateral-Raise_Shoulders_.mp4",
+    "name": "Dumbbell-Lying-Rear-Lateral-Raise_Shoulders_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725827/fitnova/exercises/videos/Dumbbell-Lying-Rear-Lateral-Raise_Shoulders__uzjfro.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Lying-Rear-Lateral-Raise_Shoulders__uzjfro",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 6985686
+  },
+  {
+    "file": "exercises/Dumbbell-One-Arm-Bent-over-Row-(female)_Shoulders.mp4",
+    "name": "Dumbbell-One-Arm-Bent-over-Row-(female)_Shoulders.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725830/fitnova/exercises/videos/Dumbbell-One-Arm-Bent-over-Row-_female__Shoulders_am32a6.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-One-Arm-Bent-over-Row-_female__Shoulders_am32a6",
+    "duration": 6.6,
+    "format": "mp4",
+    "bytes": 6134180
+  },
+  {
+    "file": "exercises/Dumbbell-Pullover-(VERSION-2)_Back_.mp4",
+    "name": "Dumbbell-Pullover-(VERSION-2)_Back_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725833/fitnova/exercises/videos/Dumbbell-Pullover-_VERSION-2__Back__njxyd4.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Pullover-_VERSION-2__Back__njxyd4",
+    "duration": 5.966667,
+    "format": "mp4",
+    "bytes": 5244236
+  },
+  {
+    "file": "exercises/Dumbbell-Rear-Lunge_Thighs-FIX_.mp4",
+    "name": "Dumbbell-Rear-Lunge_Thighs-FIX_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725838/fitnova/exercises/videos/Dumbbell-Rear-Lunge_Thighs-FIX__vzyni9.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Rear-Lunge_Thighs-FIX__vzyni9",
+    "duration": 12,
+    "format": "mp4",
+    "bytes": 16551232
+  },
+  {
+    "file": "exercises/Dumbbell-Russian-Twist-with-Legs-Floor-Off_Waist_.mp4",
+    "name": "Dumbbell-Russian-Twist-with-Legs-Floor-Off_Waist_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725842/fitnova/exercises/videos/Dumbbell-Russian-Twist-with-Legs-Floor-Off_Waist__xdjkwj.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Russian-Twist-with-Legs-Floor-Off_Waist__xdjkwj",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 12521241
+  },
+  {
+    "file": "exercises/Dumbbell-Shrug_Back-FIX_.mp4",
+    "name": "Dumbbell-Shrug_Back-FIX_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725845/fitnova/exercises/videos/Dumbbell-Shrug_Back-FIX__koanlp.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Shrug_Back-FIX__koanlp",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 3437485
+  },
+  {
+    "file": "exercises/Dumbbell-Sit-up_Waist_.mp4",
+    "name": "Dumbbell-Sit-up_Waist_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725849/fitnova/exercises/videos/Dumbbell-Sit-up_Waist__cw57k6.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Sit-up_Waist__cw57k6",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 13213061
+  },
+  {
+    "file": "exercises/Dumbbell-Squat_Thighs.mp4",
+    "name": "Dumbbell-Squat_Thighs.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725852/fitnova/exercises/videos/Dumbbell-Squat_Thighs_kgs55b.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Squat_Thighs_kgs55b",
+    "duration": 6.57324,
+    "format": "mp4",
+    "bytes": 8031698
+  },
+  {
+    "file": "exercises/Dumbbell-Standing-Alternate-Vertical-Front-Raises_.mp4",
+    "name": "Dumbbell-Standing-Alternate-Vertical-Front-Raises_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725856/fitnova/exercises/videos/Dumbbell-Standing-Alternate-Vertical-Front-Raises__thq1gm.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Standing-Alternate-Vertical-Front-Raises__thq1gm",
+    "duration": 8.133333,
+    "format": "mp4",
+    "bytes": 4674403
+  },
+  {
+    "file": "exercises/Dumbbell-Standing-Biceps-Curl_Upper-Arms-FIX2_.mp4",
+    "name": "Dumbbell-Standing-Biceps-Curl_Upper-Arms-FIX2_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725858/fitnova/exercises/videos/Dumbbell-Standing-Biceps-Curl_Upper-Arms-FIX2__taegvm.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Standing-Biceps-Curl_Upper-Arms-FIX2__taegvm",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 2796266
+  },
+  {
+    "file": "exercises/Dumbbell-Standing-Calf-Raise_Calves-FIX_.mp4",
+    "name": "Dumbbell-Standing-Calf-Raise_Calves-FIX_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725861/fitnova/exercises/videos/Dumbbell-Standing-Calf-Raise_Calves-FIX__k7zpty.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Standing-Calf-Raise_Calves-FIX__k7zpty",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 5723161
+  },
+  {
+    "file": "exercises/Dumbbell-Standing-Overhead-Press_shoulder.mp4",
+    "name": "Dumbbell-Standing-Overhead-Press_shoulder.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725865/fitnova/exercises/videos/Dumbbell-Standing-Overhead-Press_shoulder_qioxus.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Standing-Overhead-Press_shoulder_qioxus",
+    "duration": 6.57324,
+    "format": "mp4",
+    "bytes": 6440313
+  },
+  {
+    "file": "exercises/Dumbbell-Standing-Triceps-Extension_Upper-Arms-FIX.mp4",
+    "name": "Dumbbell-Standing-Triceps-Extension_Upper-Arms-FIX.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725869/fitnova/exercises/videos/Dumbbell-Standing-Triceps-Extension_Upper-Arms-FIX_gkoah2.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Standing-Triceps-Extension_Upper-Arms-FIX_gkoah2",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 2235039
+  },
+  {
+    "file": "exercises/Front-Elbow-Plank-(male)_Waist-FIX_.mp4",
+    "name": "Front-Elbow-Plank-(male)_Waist-FIX_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725872/fitnova/exercises/videos/Front-Elbow-Plank-_male__Waist-FIX__hjfktv.mp4",
+    "public_id": "fitnova/exercises/videos/Front-Elbow-Plank-_male__Waist-FIX__hjfktv",
+    "duration": 6.266667,
+    "format": "mp4",
+    "bytes": 6057403
+  },
+  {
+    "file": "exercises/Leg-Raise-Hip-Lift-with-Head-up_Waist.mp4",
+    "name": "Leg-Raise-Hip-Lift-with-Head-up_Waist.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725876/fitnova/exercises/videos/Leg-Raise-Hip-Lift-with-Head-up_Waist_e5hovb.mp4",
+    "public_id": "fitnova/exercises/videos/Leg-Raise-Hip-Lift-with-Head-up_Waist_e5hovb",
+    "duration": 6.57324,
+    "format": "mp4",
+    "bytes": 8042763
+  },
+  {
+    "file": "exercises/Lunge-Stretch-(female)_Thighs_.mp4",
+    "name": "Lunge-Stretch-(female)_Thighs_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725881/fitnova/exercises/videos/Lunge-Stretch-_female__Thighs__ngkasl.mp4",
+    "public_id": "fitnova/exercises/videos/Lunge-Stretch-_female__Thighs__ngkasl",
+    "duration": 7.6,
+    "format": "mp4",
+    "bytes": 9357412
+  },
+  {
+    "file": "exercises/Reverse-grip-Pull-up_Back-FIX_.mp4",
+    "name": "Reverse-grip-Pull-up_Back-FIX_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725886/fitnova/exercises/videos/Reverse-grip-Pull-up_Back-FIX__ep9ppf.mp4",
+    "public_id": "fitnova/exercises/videos/Reverse-grip-Pull-up_Back-FIX__ep9ppf",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 6246540
+  },
+  {
+    "file": "exercises/Russian-Twist-(female)_waist.mp4",
+    "name": "Russian-Twist-(female)_waist.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725895/fitnova/exercises/videos/Russian-Twist-_female__waist_vyxxoi.mp4",
+    "public_id": "fitnova/exercises/videos/Russian-Twist-_female__waist_vyxxoi",
+    "duration": 6.6,
+    "format": "mp4",
+    "bytes": 8634773
+  },
+  {
+    "file": "exercises/Sit-up-with-Chair-Assisted_Waist.mp4",
+    "name": "Sit-up-with-Chair-Assisted_Waist.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725902/fitnova/exercises/videos/Sit-up-with-Chair-Assisted_Waist_ylnf4r.mp4",
+    "public_id": "fitnova/exercises/videos/Sit-up-with-Chair-Assisted_Waist_ylnf4r",
+    "duration": 6.6,
+    "format": "mp4",
+    "bytes": 9087241
+  },
+  {
+    "file": "exercises/Sternum-Pull-up-(Gironda)_Back_.mp4",
+    "name": "Sternum-Pull-up-(Gironda)_Back_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725906/fitnova/exercises/videos/Sternum-Pull-up-_Gironda__Back__qpp7ss.mp4",
+    "public_id": "fitnova/exercises/videos/Sternum-Pull-up-_Gironda__Back__qpp7ss",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 5904837
+  },
+  {
+    "file": "exercises/Triceps-Dip-Floor_Upper-Arms-FIX_.mp4",
+    "name": "Triceps-Dip-Floor_Upper-Arms-FIX_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725910/fitnova/exercises/videos/Triceps-Dip-Floor_Upper-Arms-FIX__q5vx46.mp4",
+    "public_id": "fitnova/exercises/videos/Triceps-Dip-Floor_Upper-Arms-FIX__q5vx46",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 12635553
+  },
+  {
+    "file": "exercises/Wheel-Rollout_Waist-FIX2_.mp4",
+    "name": "Wheel-Rollout_Waist-FIX2_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725916/fitnova/exercises/videos/Wheel-Rollout_Waist-FIX2__qe8suj.mp4",
+    "public_id": "fitnova/exercises/videos/Wheel-Rollout_Waist-FIX2__qe8suj",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 11520281
+  },
+  {
+    "file": "exercises/Wide-Air-Squat_Hips_.mp4",
+    "name": "Wide-Air-Squat_Hips_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725921/fitnova/exercises/videos/Wide-Air-Squat_Hips__at0tbp.mp4",
+    "public_id": "fitnova/exercises/videos/Wide-Air-Squat_Hips__at0tbp",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 9400769
+  },
+  {
+    "file": "exercises/Wide-Hand-Push-up_Chest.mp4",
+    "name": "Wide-Hand-Push-up_Chest.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725927/fitnova/exercises/videos/Wide-Hand-Push-up_Chest_f38v2v.mp4",
+    "public_id": "fitnova/exercises/videos/Wide-Hand-Push-up_Chest_f38v2v",
+    "duration": 6.6,
+    "format": "mp4",
+    "bytes": 8775025
+  },
+  {
+    "file": "exercises/Wipers-(straight-leg)_Waist-FIX_.mp4",
+    "name": "Wipers-(straight-leg)_Waist-FIX_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725933/fitnova/exercises/videos/Wipers-_straight-leg__Waist-FIX__omfywy.mp4",
+    "public_id": "fitnova/exercises/videos/Wipers-_straight-leg__Waist-FIX__omfywy",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 13242137
+  },
+  {
+    "file": "exercises_optimized/Clock-Push-Up_Chest.mp4",
+    "name": "Clock-Push-Up_Chest.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725939/fitnova/exercises/videos/Clock-Push-Up_Chest_tue2qd.mp4",
+    "public_id": "fitnova/exercises/videos/Clock-Push-Up_Chest_tue2qd",
+    "duration": 29.7,
+    "format": "mp4",
+    "bytes": 8652815
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-Bench-Press-(female)_Chest.mp4",
+    "name": "Dumbbell-Bench-Press-(female)_Chest.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725942/fitnova/exercises/videos/Dumbbell-Bench-Press-_female__Chest_mqap21.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Bench-Press-_female__Chest_mqap21",
+    "duration": 6.566667,
+    "format": "mp4",
+    "bytes": 1442476
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-Cross-Body-Hammer-Curl-(Version-2)_Upper-Arms-FIX.mp4",
+    "name": "Dumbbell-Cross-Body-Hammer-Curl-(Version-2)_Upper-Arms-FIX.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725944/fitnova/exercises/videos/Dumbbell-Cross-Body-Hammer-Curl-_Version-2__Upper-Arms-FIX_rvhs93.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Cross-Body-Hammer-Curl-_Version-2__Upper-Arms-FIX_rvhs93",
+    "duration": 13.2,
+    "format": "mp4",
+    "bytes": 1313036
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-Fly_Chest-FIX2_.mp4",
+    "name": "Dumbbell-Fly_Chest-FIX2_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725947/fitnova/exercises/videos/Dumbbell-Fly_Chest-FIX2__qffkgn.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Fly_Chest-FIX2__qffkgn",
+    "duration": 5.993333,
+    "format": "mp4",
+    "bytes": 1580959
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-Hammer-Curl-(version-2)_Upper-Arms-FIX_.mp4",
+    "name": "Dumbbell-Hammer-Curl-(version-2)_Upper-Arms-FIX_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725950/fitnova/exercises/videos/Dumbbell-Hammer-Curl-_version-2__Upper-Arms-FIX__is9vi6.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Hammer-Curl-_version-2__Upper-Arms-FIX__is9vi6",
+    "duration": 5.966667,
+    "format": "mp4",
+    "bytes": 1055164
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-Incline-Bench-Press-(female)_Chest.mp4",
+    "name": "Dumbbell-Incline-Bench-Press-(female)_Chest.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725952/fitnova/exercises/videos/Dumbbell-Incline-Bench-Press-_female__Chest_qqzusm.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Incline-Bench-Press-_female__Chest_qqzusm",
+    "duration": 6.566667,
+    "format": "mp4",
+    "bytes": 977019
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-Incline-Bench-Press_Chest-FIX2_.mp4",
+    "name": "Dumbbell-Incline-Bench-Press_Chest-FIX2_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725954/fitnova/exercises/videos/Dumbbell-Incline-Bench-Press_Chest-FIX2__dg0u2i.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Incline-Bench-Press_Chest-FIX2__dg0u2i",
+    "duration": 5.993333,
+    "format": "mp4",
+    "bytes": 1009456
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-Incline-Fly_Chest-FIX2_.mp4",
+    "name": "Dumbbell-Incline-Fly_Chest-FIX2_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725956/fitnova/exercises/videos/Dumbbell-Incline-Fly_Chest-FIX2__x65vij.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Incline-Fly_Chest-FIX2__x65vij",
+    "duration": 5.993333,
+    "format": "mp4",
+    "bytes": 1118528
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-Incline-Triceps-Extension_Upper-Arms-FIX_.mp4",
+    "name": "Dumbbell-Incline-Triceps-Extension_Upper-Arms-FIX_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725959/fitnova/exercises/videos/Dumbbell-Incline-Triceps-Extension_Upper-Arms-FIX__iaau47.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Incline-Triceps-Extension_Upper-Arms-FIX__iaau47",
+    "duration": 5.993333,
+    "format": "mp4",
+    "bytes": 880065
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-Kickback_Upper-Arms.mp4",
+    "name": "Dumbbell-Kickback_Upper-Arms.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725965/fitnova/exercises/videos/Dumbbell-Kickback_Upper-Arms_nkd9tx.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Kickback_Upper-Arms_nkd9tx",
+    "duration": 6.639973,
+    "format": "mp4",
+    "bytes": 872845
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-Lateral-Raise_shoulder-FIX_.mp4",
+    "name": "Dumbbell-Lateral-Raise_shoulder-FIX_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725970/fitnova/exercises/videos/Dumbbell-Lateral-Raise_shoulder-FIX__y1rewh.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Lateral-Raise_shoulder-FIX__y1rewh",
+    "duration": 5.822667,
+    "format": "mp4",
+    "bytes": 1099199
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-Lying-Rear-Lateral-Raise_Shoulders_.mp4",
+    "name": "Dumbbell-Lying-Rear-Lateral-Raise_Shoulders_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725975/fitnova/exercises/videos/Dumbbell-Lying-Rear-Lateral-Raise_Shoulders__fggbge.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Lying-Rear-Lateral-Raise_Shoulders__fggbge",
+    "duration": 5.993333,
+    "format": "mp4",
+    "bytes": 1739544
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-One-Arm-Bent-over-Row-(female)_Shoulders.mp4",
+    "name": "Dumbbell-One-Arm-Bent-over-Row-(female)_Shoulders.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725979/fitnova/exercises/videos/Dumbbell-One-Arm-Bent-over-Row-_female__Shoulders_hosv9g.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-One-Arm-Bent-over-Row-_female__Shoulders_hosv9g",
+    "duration": 6.6,
+    "format": "mp4",
+    "bytes": 1118857
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-Pullover-(VERSION-2)_Back_.mp4",
+    "name": "Dumbbell-Pullover-(VERSION-2)_Back_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725983/fitnova/exercises/videos/Dumbbell-Pullover-_VERSION-2__Back__x0gdhr.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Pullover-_VERSION-2__Back__x0gdhr",
+    "duration": 5.966667,
+    "format": "mp4",
+    "bytes": 1179437
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-Rear-Lunge_Thighs-FIX_.mp4",
+    "name": "Dumbbell-Rear-Lunge_Thighs-FIX_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725987/fitnova/exercises/videos/Dumbbell-Rear-Lunge_Thighs-FIX__bdaazl.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Rear-Lunge_Thighs-FIX__bdaazl",
+    "duration": 12,
+    "format": "mp4",
+    "bytes": 3040512
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-Russian-Twist-with-Legs-Floor-Off_Waist_.mp4",
+    "name": "Dumbbell-Russian-Twist-with-Legs-Floor-Off_Waist_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725990/fitnova/exercises/videos/Dumbbell-Russian-Twist-with-Legs-Floor-Off_Waist__f4y0tj.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Russian-Twist-with-Legs-Floor-Off_Waist__f4y0tj",
+    "duration": 5.993333,
+    "format": "mp4",
+    "bytes": 2615137
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-Shrug_Back-FIX_.mp4",
+    "name": "Dumbbell-Shrug_Back-FIX_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725992/fitnova/exercises/videos/Dumbbell-Shrug_Back-FIX__bnmw5s.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Shrug_Back-FIX__bnmw5s",
+    "duration": 5.993333,
+    "format": "mp4",
+    "bytes": 793534
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-Sit-up_Waist_.mp4",
+    "name": "Dumbbell-Sit-up_Waist_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725995/fitnova/exercises/videos/Dumbbell-Sit-up_Waist__byqbc3.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Sit-up_Waist__byqbc3",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 2227369
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-Squat_Thighs.mp4",
+    "name": "Dumbbell-Squat_Thighs.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784725998/fitnova/exercises/videos/Dumbbell-Squat_Thighs_rpcqqr.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Squat_Thighs_rpcqqr",
+    "duration": 6.57324,
+    "format": "mp4",
+    "bytes": 1744289
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-Standing-Alternate-Vertical-Front-Raises_.mp4",
+    "name": "Dumbbell-Standing-Alternate-Vertical-Front-Raises_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726001/fitnova/exercises/videos/Dumbbell-Standing-Alternate-Vertical-Front-Raises__ondlbc.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Standing-Alternate-Vertical-Front-Raises__ondlbc",
+    "duration": 8.126667,
+    "format": "mp4",
+    "bytes": 1146445
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-Standing-Biceps-Curl_Upper-Arms-FIX2_.mp4",
+    "name": "Dumbbell-Standing-Biceps-Curl_Upper-Arms-FIX2_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726004/fitnova/exercises/videos/Dumbbell-Standing-Biceps-Curl_Upper-Arms-FIX2__wibwc4.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Standing-Biceps-Curl_Upper-Arms-FIX2__wibwc4",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 733505
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-Standing-Calf-Raise_Calves-FIX_.mp4",
+    "name": "Dumbbell-Standing-Calf-Raise_Calves-FIX_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726006/fitnova/exercises/videos/Dumbbell-Standing-Calf-Raise_Calves-FIX__et8kom.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Standing-Calf-Raise_Calves-FIX__et8kom",
+    "duration": 5.993333,
+    "format": "mp4",
+    "bytes": 1229292
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-Standing-Overhead-Press_shoulder.mp4",
+    "name": "Dumbbell-Standing-Overhead-Press_shoulder.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726008/fitnova/exercises/videos/Dumbbell-Standing-Overhead-Press_shoulder_zkupyg.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Standing-Overhead-Press_shoulder_zkupyg",
+    "duration": 6.57324,
+    "format": "mp4",
+    "bytes": 800429
+  },
+  {
+    "file": "exercises_optimized/Dumbbell-Standing-Triceps-Extension_Upper-Arms-FIX.mp4",
+    "name": "Dumbbell-Standing-Triceps-Extension_Upper-Arms-FIX.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726011/fitnova/exercises/videos/Dumbbell-Standing-Triceps-Extension_Upper-Arms-FIX_fldjxb.mp4",
+    "public_id": "fitnova/exercises/videos/Dumbbell-Standing-Triceps-Extension_Upper-Arms-FIX_fldjxb",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 625149
+  },
+  {
+    "file": "exercises_optimized/Front-Elbow-Plank-(male)_Waist-FIX_.mp4",
+    "name": "Front-Elbow-Plank-(male)_Waist-FIX_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726013/fitnova/exercises/videos/Front-Elbow-Plank-_male__Waist-FIX__btucek.mp4",
+    "public_id": "fitnova/exercises/videos/Front-Elbow-Plank-_male__Waist-FIX__btucek",
+    "duration": 6.266667,
+    "format": "mp4",
+    "bytes": 1343204
+  },
+  {
+    "file": "exercises_optimized/Leg-Raise-Hip-Lift-with-Head-up_Waist.mp4",
+    "name": "Leg-Raise-Hip-Lift-with-Head-up_Waist.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726015/fitnova/exercises/videos/Leg-Raise-Hip-Lift-with-Head-up_Waist_nwbwgn.mp4",
+    "public_id": "fitnova/exercises/videos/Leg-Raise-Hip-Lift-with-Head-up_Waist_nwbwgn",
+    "duration": 6.57324,
+    "format": "mp4",
+    "bytes": 1809793
+  },
+  {
+    "file": "exercises_optimized/Lunge-Stretch-(female)_Thighs_.mp4",
+    "name": "Lunge-Stretch-(female)_Thighs_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726018/fitnova/exercises/videos/Lunge-Stretch-_female__Thighs__qahslc.mp4",
+    "public_id": "fitnova/exercises/videos/Lunge-Stretch-_female__Thighs__qahslc",
+    "duration": 7.593333,
+    "format": "mp4",
+    "bytes": 1867515
+  },
+  {
+    "file": "exercises_optimized/Reverse-grip-Pull-up_Back-FIX_.mp4",
+    "name": "Reverse-grip-Pull-up_Back-FIX_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726021/fitnova/exercises/videos/Reverse-grip-Pull-up_Back-FIX__uga3zy.mp4",
+    "public_id": "fitnova/exercises/videos/Reverse-grip-Pull-up_Back-FIX__uga3zy",
+    "duration": 5.993333,
+    "format": "mp4",
+    "bytes": 1152098
+  },
+  {
+    "file": "exercises_optimized/Russian-Twist-(female)_waist.mp4",
+    "name": "Russian-Twist-(female)_waist.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726023/fitnova/exercises/videos/Russian-Twist-_female__waist_bgeb7r.mp4",
+    "public_id": "fitnova/exercises/videos/Russian-Twist-_female__waist_bgeb7r",
+    "duration": 6.6,
+    "format": "mp4",
+    "bytes": 1677769
+  },
+  {
+    "file": "exercises_optimized/Sit-up-with-Chair-Assisted_Waist.mp4",
+    "name": "Sit-up-with-Chair-Assisted_Waist.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726025/fitnova/exercises/videos/Sit-up-with-Chair-Assisted_Waist_xdncsw.mp4",
+    "public_id": "fitnova/exercises/videos/Sit-up-with-Chair-Assisted_Waist_xdncsw",
+    "duration": 6.566667,
+    "format": "mp4",
+    "bytes": 2038264
+  },
+  {
+    "file": "exercises_optimized/Sternum-Pull-up-(Gironda)_Back_.mp4",
+    "name": "Sternum-Pull-up-(Gironda)_Back_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726027/fitnova/exercises/videos/Sternum-Pull-up-_Gironda__Back__vjy54n.mp4",
+    "public_id": "fitnova/exercises/videos/Sternum-Pull-up-_Gironda__Back__vjy54n",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 1159308
+  },
+  {
+    "file": "exercises_optimized/Triceps-Dip-Floor_Upper-Arms-FIX_.mp4",
+    "name": "Triceps-Dip-Floor_Upper-Arms-FIX_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726030/fitnova/exercises/videos/Triceps-Dip-Floor_Upper-Arms-FIX__nmetmq.mp4",
+    "public_id": "fitnova/exercises/videos/Triceps-Dip-Floor_Upper-Arms-FIX__nmetmq",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 2350103
+  },
+  {
+    "file": "exercises_optimized/Wheel-Rollout_Waist-FIX2_.mp4",
+    "name": "Wheel-Rollout_Waist-FIX2_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726032/fitnova/exercises/videos/Wheel-Rollout_Waist-FIX2__rgkvus.mp4",
+    "public_id": "fitnova/exercises/videos/Wheel-Rollout_Waist-FIX2__rgkvus",
+    "duration": 5.993333,
+    "format": "mp4",
+    "bytes": 2182698
+  },
+  {
+    "file": "exercises_optimized/Wide-Air-Squat_Hips_.mp4",
+    "name": "Wide-Air-Squat_Hips_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726034/fitnova/exercises/videos/Wide-Air-Squat_Hips__sv1ugt.mp4",
+    "public_id": "fitnova/exercises/videos/Wide-Air-Squat_Hips__sv1ugt",
+    "duration": 5.993333,
+    "format": "mp4",
+    "bytes": 1811494
+  },
+  {
+    "file": "exercises_optimized/Wide-Hand-Push-up_Chest.mp4",
+    "name": "Wide-Hand-Push-up_Chest.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726036/fitnova/exercises/videos/Wide-Hand-Push-up_Chest_icmhsz.mp4",
+    "public_id": "fitnova/exercises/videos/Wide-Hand-Push-up_Chest_icmhsz",
+    "duration": 6.6,
+    "format": "mp4",
+    "bytes": 1774585
+  },
+  {
+    "file": "exercises_optimized/Wipers-(straight-leg)_Waist-FIX_.mp4",
+    "name": "Wipers-(straight-leg)_Waist-FIX_.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726039/fitnova/exercises/videos/Wipers-_straight-leg__Waist-FIX__g44w8e.mp4",
+    "public_id": "fitnova/exercises/videos/Wipers-_straight-leg__Waist-FIX__g44w8e",
+    "duration": 6,
+    "format": "mp4",
+    "bytes": 1977503
+  },
+  {
+    "file": "left-leg.mp4",
+    "name": "left-leg.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726044/fitnova/exercises/videos/left-leg_higbcy.mp4",
+    "public_id": "fitnova/exercises/videos/left-leg_higbcy",
+    "duration": 9.286,
+    "format": "mp4",
+    "bytes": 3545492
+  },
+  {
+    "file": "leg-raise-crunch.mp4",
+    "name": "leg-raise-crunch.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726049/fitnova/exercises/videos/leg-raise-crunch_m2b9jp.mp4",
+    "public_id": "fitnova/exercises/videos/leg-raise-crunch_m2b9jp",
+    "duration": 9.355,
+    "format": "mp4",
+    "bytes": 4667463
+  },
+  {
+    "file": "leg-raise.mp4",
+    "name": "leg-raise.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726053/fitnova/exercises/videos/leg-raise_afe8xu.mp4",
+    "public_id": "fitnova/exercises/videos/leg-raise_afe8xu",
+    "duration": 7.417,
+    "format": "mp4",
+    "bytes": 3015517
+  },
+  {
+    "file": "side-lunge-floor.mp4",
+    "name": "side-lunge-floor.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726058/fitnova/exercises/videos/side-lunge-floor_pdvdeh.mp4",
+    "public_id": "fitnova/exercises/videos/side-lunge-floor_pdvdeh",
+    "duration": 11.234,
+    "format": "mp4",
+    "bytes": 5769580
+  },
+  {
+    "file": "side-plank.mp4",
+    "name": "side-plank.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726062/fitnova/exercises/videos/side-plank_wwjnhc.mp4",
+    "public_id": "fitnova/exercises/videos/side-plank_wwjnhc",
+    "duration": 12.770975,
+    "format": "mp4",
+    "bytes": 6056302
+  },
+  {
+    "file": "sit-ups.mp4",
+    "name": "sit-ups.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726065/fitnova/exercises/videos/sit-ups_dsmzen.mp4",
+    "public_id": "fitnova/exercises/videos/sit-ups_dsmzen",
+    "duration": 9.091,
+    "format": "mp4",
+    "bytes": 4441241
+  },
+  {
+    "file": "stand-forward.mp4",
+    "name": "stand-forward.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726069/fitnova/exercises/videos/stand-forward_izbz4q.mp4",
+    "public_id": "fitnova/exercises/videos/stand-forward_izbz4q",
+    "duration": 11.63381,
+    "format": "mp4",
+    "bytes": 4085286
+  },
+  {
+    "file": "static-full-body.mp4",
+    "name": "static-full-body.mp4",
+    "secure_url": "https://res.cloudinary.com/ncjlij4d/video/upload/v1784726074/fitnova/exercises/videos/static-full-body_ahzsqk.mp4",
+    "public_id": "fitnova/exercises/videos/static-full-body_ahzsqk",
+    "duration": 9.148662,
+    "format": "mp4",
+    "bytes": 4644910
+  }
+]

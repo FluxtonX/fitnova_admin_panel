@@ -34,7 +34,33 @@ export const AuthProvider = ({ children }) => {
 
   return (
     <AuthContext.Provider value={value}>
-      {!loading && children}
+      {loading ? (
+        <div style={{
+          minHeight: '100vh',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          backgroundColor: '#09090b',
+          color: '#ffffff',
+          fontFamily: 'sans-serif'
+        }}>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{
+              width: '38px',
+              height: '38px',
+              border: '3px solid rgba(255,255,255,0.15)',
+              borderTopColor: '#2563eb',
+              borderRadius: '50%',
+              animation: 'authSpin 0.75s linear infinite',
+              margin: '0 auto 1rem'
+            }} />
+            <p style={{ fontSize: '0.88rem', color: '#a1a1aa', fontWeight: 500 }}>Loading Fitnova Admin...</p>
+            <style>{`@keyframes authSpin { to { transform: rotate(360deg); } }`}</style>
+          </div>
+        </div>
+      ) : (
+        children
+      )}
     </AuthContext.Provider>
   );
 };

@@ -47,11 +47,11 @@ function App() {
                 {/* Nested routes will render in the Outlet of AdminLayout */}
                 <Route index element={<Dashboard />} />
                 <Route path="users" element={<UsersList />} />
-                <Route path="exercises" element={<ExercisesList />} />
+                <Route path="exercises" element={<Navigate to="/workouts" replace />} />
                 <Route path="workouts" element={<WorkoutsList />} />
                 <Route path="recipes" element={<NutritionList />} />
                 <Route path="meditation" element={<MeditationList />} />
-                <Route path="sleep" element={<SleepList />} />
+                <Route path="sleep" element={<Navigate to="/meditation" replace />} />
                 <Route path="challenges" element={<ChallengesList />} />
                 <Route path="notifications" element={<NotificationsList />} />
                 <Route path="settings" element={<Settings />} />

@@ -82,9 +82,10 @@ const Header = ({ onMenuClick }) => {
   }, []);
 
   const handleNotificationClick = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-    setUnreadCount(0); // Mark all as read when opening
+    setIsDropdownOpen(false);
+    setUnreadCount(0);
     setNotifications((prev) => prev.map((n) => ({ ...n, read: true })));
+    navigate('/notifications');
   };
 
   const clearAllNotifications = () => {

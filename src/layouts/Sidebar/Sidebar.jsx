@@ -42,13 +42,6 @@ const navGroups = [
     title: 'Training',
     items: [
       {
-        path: '/exercises',
-        label: 'Exercises',
-        icon: Dumbbell,
-        color: '#f97316',
-        bg: 'rgba(249,115,22,0.12)',
-      },
-      {
         path: '/workouts',
         label: 'Workouts',
         icon: PersonStanding,
@@ -69,17 +62,10 @@ const navGroups = [
     items: [
       {
         path: '/meditation',
-        label: 'Meditation',
+        label: 'Meditation & Sleep',
         icon: Brain,
         color: '#8b5cf6',
         bg: 'rgba(139,92,246,0.12)',
-      },
-      {
-        path: '/sleep',
-        label: 'Sleep',
-        icon: Moon,
-        color: '#06b6d4',
-        bg: 'rgba(6,182,212,0.12)',
       },
       {
         path: '/challenges',

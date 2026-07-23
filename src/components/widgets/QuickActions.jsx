@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { UserPlus, PersonSimpleRun, Barbell, Megaphone } from '@phosphor-icons/react';
+import { UserPlus, PersonSimpleRun, Trophy, Megaphone } from '@phosphor-icons/react';
 import styles from './QuickActions.module.css';
 
 const QuickActions = () => {
@@ -9,7 +9,7 @@ const QuickActions = () => {
   const actions = [
     { label: 'Add New User', icon: <UserPlus size={24} weight="duotone" />, path: '/users', colorClass: styles.indigo },
     { label: 'Create Workout', icon: <PersonSimpleRun size={24} weight="duotone" />, path: '/workouts', colorClass: styles.emerald },
-    { label: 'Add Exercise', icon: <Barbell size={24} weight="duotone" />, path: '/exercises', colorClass: styles.amber },
+    { label: 'New Challenge', icon: <Trophy size={24} weight="duotone" />, path: '/challenges', colorClass: styles.amber },
     { label: 'Send Alert', icon: <Megaphone size={24} weight="duotone" />, path: '/notifications', colorClass: styles.rose }
   ];
 
